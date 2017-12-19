@@ -1,0 +1,122 @@
+{
+	"id": "255",
+	"name": "emrFollowUpAddVitalPulseOximetryfromVitalDashboard",
+	"description": "EMR FollowUp Add Pulse Oximetery Vital from Vital Dashboard",
+	"module":"Vitals",
+	"severity":"Normal",
+	"pageURI": "http://52.43.126.48:3001/#/",
+	"steps": [
+		{
+			"id": "1",
+			"elementLocator": {
+				"type": "model",
+				"locator": "accessCode"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+				
+		},
+		{
+			"id": "2",
+			"elementLocator": {
+				"type": "model",
+				"locator": "password"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "3",
+			"elementLocator": {
+				"type": "model",
+				"locator": "hospitalName"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "4",
+			"elementLocator": {
+				"type": "css",
+				"locator": "[ng-click='validate()']"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		},
+		{
+
+			"id": "5",
+			"elementLocator": {
+				"type": "id",
+				"locator": "FollowUpPatientListId"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+				{
+
+			"id": "6",
+			"elementLocator": {
+				"type": "repeat",
+				"locator": "patient in followupPatientList,followUpSinglePatientId"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+
+			"id": "7",
+			"elementLocator": {
+				"type": "id",
+				"locator": "followUpPatientDetailsNextArrow"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		
+		},
+		{
+			"id": "8",
+			"elementLocator": {
+				"type": "id",
+				"locator": "iconvitalplus"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "9",
+			"elementLocator": {
+				"type": "xpath",
+				"locator": "/html/body/div[1]/div[1]/div[4]/div[3]/div/div[3]/div/div/div[2]/div/div[1]/div[2]/div[8]/a"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "10",
+			"elementLocator": {
+				"type": "xpath",
+				"locator": "/html/body/div[1]/div[1]/div[4]/div[3]/div/div[3]/div/div/div[2]/div/div[2]/form/div[2]/div[2]/span[2]/input"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "11",
+			"elementLocator": {
+				"type": "xpath",
+				"locator": "/html/body/div[1]/div[1]/div[4]/div[3]/div/div[3]/div/div/div[2]/div/div[2]/form/div[2]/div[5]/button"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		}
+		
+	]
+}

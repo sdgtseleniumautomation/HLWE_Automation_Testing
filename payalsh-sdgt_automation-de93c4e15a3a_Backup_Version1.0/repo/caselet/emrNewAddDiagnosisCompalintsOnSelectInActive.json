@@ -1,0 +1,171 @@
+{
+	"id": "70",
+	"name": "emrNewAddDiagnosisCompalintsOnSelectInActive",
+	"description": "EMR New Add record in Diagnosis/Complaints on click of Inactive",
+	"module":"Diagnosis/Complaints",
+	"severity":"Low",
+	"pageURI": "http://testapplication2.j273avp3jn.us-west-2.elasticbeanstalk.com/#/",
+	"steps": [
+		{
+			"id": "1",
+			"elementLocator": {
+				"type": "model",
+				"locator": "accessCode"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+				
+		},
+		{
+			"id": "2",
+			"elementLocator": {
+				"type": "model",
+				"locator": "password"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "3",
+			"elementLocator": {
+				"type": "model",
+				"locator": "hospitalName"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "4",
+			"elementLocator": {
+				"type": "css",
+				"locator": "[ng-click='validate()']"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "5",
+			"elementLocator": {
+				"type": "id",
+				"locator": "newPatientListId"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "6",
+			"elementLocator": {
+				"type": "repeatnew",
+				"locator": "patient in newPatientList,searchPatientImgNewM"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "7",
+			"elementLocator": {
+				"type": "css",
+				"locator": ".patient-profile-expand.close1.ng-scope,newPatientDetailsNextArrow"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "8",
+			"elementLocator": {
+				"type": "id",
+				"locator": "homepatientcomplaint"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "9",
+			"elementLocator": {
+				"type": "model",
+				"locator": "searchProblem"
+			},
+			"elementType": "searchbox",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "10",
+			"elementLocator": {
+				"type": "id",
+				"locator": "diagnosisDatepicker"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "11",
+			"elementLocator": {
+				"type": "id",
+				"locator": ""
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "12",
+			"elementLocator": {
+				"type": "id",
+				"locator": ""
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "13",
+			"elementLocator": {
+				"type": "model",
+				"locator": "patientComplaint.comments"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "14",
+			"elementLocator": {
+				"type": "id",
+				"locator": ""
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "15",
+			"elementLocator": {
+				"type": "model",
+				"locator": "status"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "16",
+			"elementLocator": {
+				"type": "css",
+				"locator": "[ng-click='saveComplaint()']"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		}
+		
+	]
+}

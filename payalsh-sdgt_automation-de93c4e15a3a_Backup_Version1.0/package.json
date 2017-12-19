@@ -1,0 +1,31 @@
+{
+  "name": "emrautomation",
+  "version": "1.0.0",
+  "description": "EMR application automation testin",
+  "main": "conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "nothing",
+    "start": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nothing"
+  },
+  "keywords": [
+    "nothing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^2.0.1",
+    "canvas": "^1.6.5",
+    "chart.js": "^2.5.0",
+    "collections": "^5.0.6",
+    "exceljs": "^0.4.3",
+    "html-pdf": "^2.1.0",
+    "nodemailer": "^4.0.1"
+  }
+}

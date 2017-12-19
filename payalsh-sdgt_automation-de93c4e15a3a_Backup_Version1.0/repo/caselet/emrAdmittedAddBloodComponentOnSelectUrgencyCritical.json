@@ -1,0 +1,153 @@
+{
+	"id": "349",
+	"name": "emrAdmittedAddBloodComponentOnSelectUrgencyCritical",
+	"description": "EMR Admitted Add data for Blood Component with Urgency Critical",
+	"module":"Order",
+	"severity":"Normal",
+	"pageURI": "http://52.43.126.48:3001/#/",
+	"steps": [
+		{
+			"id": "1",
+			"elementLocator": {
+				"type": "model",
+				"locator": "accessCode"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+				
+		},
+		{
+			"id": "2",
+			"elementLocator": {
+				"type": "model",
+				"locator": "password"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "3",
+			"elementLocator": {
+				"type": "model",
+				"locator": "hospitalName"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "4",
+			"elementLocator": {
+				"type": "css",
+				"locator": "[ng-click='validate()']"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		},
+		{
+
+
+			"id": "5",
+			"elementLocator": {
+				"type": "id",
+				"locator": "admittedPatientListId"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+
+			"id": "6",
+			"elementLocator": {
+				"type": "repeat",
+				"locator": "patient in admittedPatientList,admittedSinglePatientId"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+
+			"id": "7",
+			"elementLocator": {
+				"type": "id",
+				"locator": "admitedPatientDetailsNextArrow"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+			"id": "8",
+			"elementLocator": {
+				"type": "id",
+				"locator": "iconConsultOrder"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "9",
+			"elementLocator": {
+				"type": "id",
+				"locator": "tabBloodComp"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "10",
+			"elementLocator": {
+				"type": "repeat",
+				"locator": "order in getBloodComponentOrderList"
+			},
+			"elementType": "table",
+			"action": ["getRowCount"]
+			
+		},
+		{
+			"id": "11",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.bloodComponents"
+			},
+			"elementType": "searchbox",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "12",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.noOfBloodBags"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "13",
+			"elementLocator": {
+				"type": "id",
+				"locator": "bloodUrgencyCritical"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "14",
+			"elementLocator": {
+				"type": "css",
+				"locator": "[ng-click='saveBloodComponentOrder()']"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		}
+		
+		
+	]
+}

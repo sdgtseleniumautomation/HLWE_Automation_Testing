@@ -1,0 +1,152 @@
+{
+	"id": "518",
+	"name": "emrAdmittedAddScanedDocumentClick",
+	"description": "EMR Admitted Admitted Add Scaned Document On Click Icon Click",
+	"module":"OPD landing page",
+	"severity":"High",
+	"pageURI": "http://52.43.126.48:3001/#/",
+	"steps": [
+		{
+			"id": "1",
+			"elementLocator": {
+				"type": "model",
+				"locator": "accessCode"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+
+			
+		},
+		{
+			"id": "2",
+			"elementLocator": {
+				"type": "model",
+				"locator": "password"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "3",
+			"elementLocator": {
+				"type": "model",
+				"locator": "hospitalName"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "4",
+			"elementLocator": {
+				"type": "css",
+				"locator": "[ng-click='validate()']"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		},
+		{
+
+			"id": "5",
+			"elementLocator": {
+				"type": "id",
+				"locator": "admittedPatientListId"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+
+			"id": "6",
+			"elementLocator": {
+				"type": "repeat",
+				"locator": "patient in admittedPatientList,admittedSinglePatientId"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+
+			"id": "7",
+			"elementLocator": {
+				"type": "id",
+				"locator": "admitedPatientDetailsNextArrow"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+
+			"id": "8",
+			"elementLocator": {
+				"type": "id",
+				"locator": "iconScanned"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+			"id": "9",
+			"elementLocator": {
+				"type": "repeat",
+				"locator": "document in scanDocumentsList"
+			},
+			"elementType": "table",
+			"action": ["getRowCount"]
+			
+		},
+		{
+			"id": "10",
+			"elementLocator": {
+				"type": "model",
+				"locator": "scanDocument.scanDocType"
+			},
+			"elementType": "searchbox",
+			"action": ["input"]
+			
+		},
+		{
+			"id": "11",
+			"elementLocator": {
+				"type": "model",
+				"locator": "scanDocument.title"
+			},
+				"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+
+			"id": "12",
+			"elementLocator": {
+				"type": "model",
+				"locator": "scanDocUploadFile"
+			},
+			"elementType": "button",
+			"action": ["click"]
+		},
+		{
+			"id": "13",
+			"elementLocator": {
+				"type": "model",
+				"locator": "scanDocument.comment"
+			},
+				"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "14",
+			"elementLocator": {
+				"type": "css",
+				"locator": "[ng-click='uploadDocument()']"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		}
+		
+	] 
+}

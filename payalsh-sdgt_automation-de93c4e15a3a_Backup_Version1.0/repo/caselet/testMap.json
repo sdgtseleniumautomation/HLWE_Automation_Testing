@@ -1,0 +1,385 @@
+{
+	"name": "jsFileMapping",
+	"description": "json and js file mapping",
+	"pageURI": "http://52.43.126.48:3001/#/",
+	"steps": [
+		{
+			
+			"jsonFile": "login",
+			"jsFile": "login.js"
+				
+		},
+		{
+			
+			"jsonFile": "testcaseloader",
+			"jsFile": "test-case-loader.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrDashboardMrnSearchbox",
+			"jsFile": "emrDashboardMrnSearchbox.js"
+				
+		}
+		,
+		{
+			
+			"jsonFile": "emrDashboardWardSearchbox",
+			"jsFile": "emrDashboardWardSearchbox.js"
+				
+		}
+		,
+		{
+			
+			"jsonFile": "emrDashboardDepartmentSearchbox",
+			"jsFile": "emrDashboardDepartmentSearchbox.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrDashboardNewTabClick",
+			"jsFile": "emrDashboardNewTabClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrDashboardNewTabFields",
+			"jsFile": "emrDashboardNewTabFields.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrSurgeryIconClick",
+			"jsFile": "emrSurgeryIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrConsultOrderIconClick",
+			"jsFile": "emrConsultOrderIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrHealthEducationIconClick",
+			"jsFile": "emrHealthEducationIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrVitalIconClick",
+			"jsFile": "emrVitalIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrRehabIconClick",
+			"jsFile": "emrRehabIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrScansIconClick",
+			"jsFile": "emrScansIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrAnnotIconClick",
+			"jsFile": "emrAnnotIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrOrderIconClick",
+			"jsFile": "emrOrderIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrBloodComponentTabClick",
+			"jsFile": "emrBloodComponentTabClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrLogoutfromPatient",
+			"jsFile": "emrLogoutfromPatient.js"
+				
+		}
+		,
+		{
+			
+			"jsonFile": "emrPatientMovementIconClick",
+			"jsFile": "emrPatientMovementIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrDietOrderIconClick",
+			"jsFile": "emrDietOrderIconClick.js"
+				
+		},
+        {
+			
+			"jsonFile": "emrProceOrderIconClick",
+			"jsFile": "emrProceOrderIconClick.js"
+				
+		}
+		,
+		{
+			
+			"jsonFile": "emrNursingOrderIconClick",
+			"jsFile": "emrNursingOrderIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrOrderReviewIconClick",
+			"jsFile": "emrOrderReviewIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrOrderSignIconClick",
+			"jsFile": "emrOrderSignIconClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrRecommendationsPlusButtonClick",
+			"jsFile": "emrRecommendationsPlusButtonClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrClinicalNotesPlusButtonClick",
+			"jsFile": "emrClinicalNotesPlusButtonClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrLabPlusButtonClick",
+			"jsFile": "emrLabPlusButtonClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrDiagnosisPlusButtonClick",
+			"jsFile": "emrDiagnosisPlusButtonClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrPostingPlusButtonClick",
+			"jsFile": "emrPostingPlusButtonClick.js"
+				
+		},
+
+		{
+			
+			"jsonFile": "emrVitalsPlusButtonClick",
+			"jsFile": "emrVitalsPlusButtonClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrMedicationPlusButtonClick",
+			"jsFile": "emrMedicationPlusButtonClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrImagingPlusButtonClick",
+			"jsFile": "emrImagingPlusButtonClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrDiagnosisSectionClick",
+			"jsFile": "emrDiagnosisSectionClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrLabReviewPage",
+			"jsFile": "emrLabReviewPage.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrPrescriptionNoteDischargeSummary",
+			"jsFile": "emrPrescriptionNoteDischargeSummary.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrPostingReviewPage",
+			"jsFile": "emrPostingReviewPage.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrDiagnosisReview",
+			"jsFile": "emrDiagnosisReview.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrVitalsReviewPage",
+			"jsFile": "emrVitalsReviewPage.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrMedicationReviewPage",
+			"jsFile": "emrMedicationReviewPage.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrClinicalNotesReviewPage",
+			"jsFile": "emrClinicalNotesReviewPage.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrImagingReviewPage",
+			"jsFile": "emrImagingReviewPage.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrIPPharmacyTabClick",
+			"jsFile": "emrIPPharmacyTabClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrImagingOrderTabClick",
+			"jsFile": "emrImagingOrderTabClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrIVPharmacyTabClick",
+			"jsFile": "emrIVPharmacyTabClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrDietTabClick",
+			"jsFile": "emrDietTabClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrDietEarlyLateTabClick",
+			"jsFile": "emrDietEarlyLateTabClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrDietTubeFeedingTabClick",
+			"jsFile": "emrDietTubeFeedingTabClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrOPPharmacyTabClick",
+			"jsFile": "emrOPPharmacyTabClick.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrAddLabTestOnClickSurgeryIcon",
+			"jsFile": "emrAddLabTestOnClickSurgeryIcon.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrAddBloodComponentOnClickSurgeryIcon",
+			"jsFile": "emrAddBloodComponentOnClickSurgeryIcon.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrAddOPPharmacyOnClickSurgeryIcon",
+			"jsFile": "emrAddOPPharmacyOnClickSurgeryIcon.js"
+				
+		}
+		,
+		{
+			
+			"jsonFile": "emrAddIPPharmacyOnClickSurgeryIcon",
+			"jsFile": "emrAddIPPharmacyOnClickSurgeryIcon.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrAddIVPharmacyOnClickSurgeryIcon",
+			"jsFile": "emrAddIVPharmacyOnClickSurgeryIcon.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrAddImagingOrderOnClickSurgeryIcon",
+			"jsFile": "emrAddImagingOrderOnClickSurgeryIcon.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrAddProceSurgicalOnClickSurgeryIcon",
+			"jsFile": "emrAddProceSurgicalOnClickSurgeryIcon.js"
+				
+		},
+		{
+			
+			"jsonFile": "emrAddGeneralOnClickSurgeryIcon",
+			"jsFile": "emrAddGeneralOnClickSurgeryIcon.js"
+				
+		},
+		{
+			"jsonFile": "emrMrnPlaceholderTextCheck",
+			"jsFile": "emrMrnPlaceholderTextCheck.js"				
+		},
+		{
+			"jsonFile": "emrAddDietOnClickSurgeryIcon",
+			"jsFile": "emrAddDietOnClickSurgeryIcon.js"				
+		},
+		{
+			"jsonFile": "emrAddTubeFeedingOnClickSurgeryIcon",
+			"jsFile": "emrAddTubeFeedingOnClickSurgeryIcon.js"				
+		},
+		{
+			"jsonFile": "emrAddEarlyLateTrayOnClickSurgeryIcon",
+			"jsFile": "emrAddEarlyLateTrayOnClickSurgeryIcon.js"				
+		},
+		{
+			"jsonFile": "emrAddEarlyLateTrayOnClickSurgeryIcon",
+			"jsFile": "emrAddEarlyLateTrayOnClickSurgeryIcon.js"				
+		},
+		{
+			"jsonFile": "emrDietAdditionalOrderTabClick",
+			"jsFile": "emrDietAdditionalOrderTabClick.js"				
+		},
+		{
+			"jsonFile": "emrGeneralTabClick",
+			"jsFile": "emrGeneralTabClick.js"				
+		},
+		{
+			"jsonFile": "emrAddConsultOnClickSurgeryIcon",
+			"jsFile": "emrAddConsultOnClickSurgeryIcon.js"				
+		},
+		{
+			"jsonFile": "emrVitalsOrderTabClick",
+			"jsFile": "emrVitalsOrderTabClick.js"				
+		},
+		{
+			"jsonFile": "emrAddVitalOrdersOnClickSurgeryIcon",
+			"jsFile": "emrAddVitalOrdersOnClickSurgeryIcon.js"				
+		}
+		
+
+	]
+}

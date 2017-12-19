@@ -1,0 +1,234 @@
+{
+	"id": "484",
+	"name": "emrAdmittedDeleteInfusionDataCategoryStat",
+	"description": "EMR Admitted Delete admitted data for Infusion order for category Admission",
+	"module":"Order",
+	"severity":"High",
+	"pageURI": "http://52.43.126.48:3001/#/",
+	"steps": [
+		{
+			"id": "1",
+			"elementLocator": {
+				"type": "model",
+				"locator": "accessCode"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+				
+		},
+		{
+			"id": "2",
+			"elementLocator": {
+				"type": "model",
+				"locator": "password"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "3",
+			"elementLocator": {
+				"type": "model",
+				"locator": "hospitalName"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "4",
+			"elementLocator": {
+				"type": "css",
+				"locator": "[ng-click='validate()']"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		},
+    	{
+
+			"id": "5",
+			"elementLocator": {
+				"type": "id",
+				"locator": "admittedPatientListId"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+
+			"id": "6",
+			"elementLocator": {
+				"type": "repeat",
+				"locator": "patient in admittedPatientList,admittedSinglePatientId"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+
+			"id": "7",
+			"elementLocator": {
+				"type": "id",
+				"locator": "admitedPatientDetailsNextArrow"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+			"id": "8",
+			"elementLocator": {
+				"type": "id",
+				"locator": "iconConsultOrder"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "9",
+			"elementLocator": {
+				"type": "id",
+				"locator": "tabIvPharmcy"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "10",
+			"elementLocator": {
+				"type": "repeat",
+				"locator": "order in getIvPharmacyOrderList"
+			},
+			"elementType": "table",
+			"action": ["getRowCount"]
+			
+		},
+		{
+			"id": "11",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.solution"
+			},
+			"elementType": "searchbox",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "12",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.solVolumeStrength"
+			},
+			"elementType": "searchbox",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "13",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.solutionRoute"
+			},
+			"elementType": "searchbox",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "14",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.additiveName"
+			},
+			"elementType": "searchbox",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "15",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.additiveVolumeStrength"
+			},
+			"elementType": "searchbox",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "16",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.additiveRoute"
+			},
+			"elementType": "searchbox",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "17",
+			"elementLocator": {
+				"type": "id",
+				"locator": "IVStat"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "18",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.duration"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "19",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.infusionRate"
+			},
+			"elementType": "inputText",
+			"action":["clear","input"]
+			
+		},
+		{
+			"id": "20",
+			"elementLocator": {
+				"type": "css",
+				"locator":"[ng-click='saveIvPharmacyOrder()']" 
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "21",
+			"elementLocator": {
+				"type": "repeat",
+				"locator":"order in getIvPharmacyOrderList"
+			},
+			"elementType": "tableButton",
+			"action": ["deleteclick"]
+			
+		},
+		{
+			"id": "22",
+			"elementLocator": {
+				"type": "xpath",
+				"locator": "//*[@id='yesNoId']/button[1]/i"
+				
+
+
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		}
+		
+	]
+}

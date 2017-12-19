@@ -1,0 +1,202 @@
+{
+	"id": "296",
+	"name": "emrfollowupAddLabUrgencyStat",
+	"description": "EMR FollowUp Add data for Lab category Urgency Stat",
+	"module":"Order",
+	"severity":"High",
+	"pageURI": "http://52.43.126.48:3001/#/",
+	"steps": [
+		{
+			"id": "1",
+			"elementLocator": {
+				"type": "model",
+				"locator": "accessCode"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+
+			
+		},
+		{
+			"id": "2",
+			"elementLocator": {
+				"type": "model",
+				"locator": "password"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "3",
+			"elementLocator": {
+				"type": "model",
+				"locator": "hospitalName"
+			},
+			"elementType": "inputText",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "4",
+			"elementLocator": {
+				"type": "css",
+				"locator": "[ng-click='validate()']"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		},
+		{
+
+			"id": "5",
+			"elementLocator": {
+				"type": "id",
+				"locator": "FollowUpPatientListId"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+
+			"id": "6",
+			"elementLocator": {
+				"type": "repeat",
+				"locator": "patient in followupPatientList,followUpSinglePatientId"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+
+			"id": "7",
+			"elementLocator": {
+				"type": "id",
+				"locator": "followUpPatientDetailsNextArrow"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+
+			"id": "8",
+			"elementLocator": {
+				"type": "id",
+				"locator": "iconConsultOrder"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+		},
+		{
+			"id": "9",
+			"elementLocator": {
+				"type": "css",
+				"locator": "[ng-click='getLabOrders()']"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "10",
+			"elementLocator": {
+				"type": "repeat",
+				"locator": "order in getLabOrderList"
+			},
+			"elementType": "table",
+			"action": ["getRowCount"]
+			
+		},
+		{
+			"id": "11",
+			"elementLocator": {
+				"type": "id",
+				"locator": "BIOCHEMISTRY"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "12",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.labTest"
+			},
+			"elementType": "searchbox",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "13",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.doctorName"
+			},
+			"elementType": "searchbox",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "14",
+			"elementLocator": {
+				"type": "model",
+				"locator": "orderItems.collectSample"
+			},
+			"elementType": "searchbox",
+			"action": ["clear","input"]
+			
+		},
+		{
+			"id": "15",
+			"elementLocator": {
+				"type": "id",
+				"locator": "labUrgencyStat"
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "16",
+			"elementLocator": {
+				"type": "id",
+				"locator": "labCollectionDateTxt"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "17",
+			"elementLocator": {
+				"type": "id",
+				"locator": "labCollectionTypeLab"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "18",
+			"elementLocator": {
+				"type": "id",
+				"locator": "yearlyOften"
+			},
+			"elementType": "tab",
+			"action": ["click"]
+			
+		},
+		{
+			"id": "19",
+			"elementLocator": {
+				"type": "css",
+				"locator":"[ng-click='saveLabOrder();']" 
+			},
+			"elementType": "button",
+			"action": ["click"]
+			
+		}
+		
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"name": "errorLookup",
+	"errors": [
+		{
+			"errorCode": "1",
+			"errorSearchText": "element not visible",
+			"errorMessage": "element not visible"
+		},
+		{
+			"errorCode": "2",
+			"errorSearchText": "An invalid or illegal selector was specified",
+			"errorMessage": "invalid selector: An invalid or illegal selector was specified"
+		},
+		{
+			"errorCode": "3",
+			"errorSearchText": "Element must be user-editable in order to clear it",
+			"errorMessage": "invalid element state: Element must be user-editable in order to clear it."
+		},
+		{
+			"errorCode": "4",
+			"errorSearchText": "is not clickable at point",
+			"errorMessage": "unknown error: Element is not clickable at point. Other element would receive the click"
+		},
+		{
+			"errorCode": "5",
+			"errorSearchText": "chrome not reachable",
+			"errorMessage": "Chrome not reachable at this point."
+		}
+	]
+}
