@@ -13,7 +13,7 @@ capabilities:
 framework: 'jasmine',
 
   
-specs: ['example1.js'],
+specs: ['Read_Data.js'],
 
   
 jasmineNodeOpts: {
