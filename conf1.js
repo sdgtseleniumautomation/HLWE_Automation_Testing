@@ -45,19 +45,24 @@
 var HtmlReporter = require('protractor-jasmine2-html-reporter');
 	
 	var reporter = new HtmlReporter({
-    dest: 'protractor-reports',
-    filename: 'protractor-report.html',
-//	screenshotsFolder: 'F:\\Screeshots'
-	});
-								
+		plugins: [{
+        package: 'jasmine2-protractor-utils',
+		dest: 'protractor-reports',
+		filename: 'protractor-report.html',
+		takeScreenshots: true,
+		takeScreenshotsOnlyOnFailures: true
+//		screenshotsFolder: 'F:\\Screeshots'
+		}]
+	});				
 	exports.config = 
 	{
-	directconnect: true,
-	capabilities: {'browserName': 'chrome'},
-	framework: 'jasmine',
-	specs: ['example.js'],
-	jasmineNodeOpts: {
-	defaultTimeoutInterval: 300000
+		
+		directconnect: true,
+		capabilities: {'browserName': 'chrome'},
+		framework: 'jasmine',
+		specs: ['example.js'],
+		jasmineNodeOpts: {
+		defaultTimeoutInterval: 300000
 	},
 	onPrepare: function() {
 	//Add a screenshot reporter and store screenshots to `/tmp/screenshots`:
@@ -65,3 +70,5 @@ var HtmlReporter = require('protractor-jasmine2-html-reporter');
 		  
 	  }
 	  }
+	
+	
